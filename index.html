@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>桑吉次力 · 个人学术主页</title>
+    <title>Sangsrgyas Tshering · Academic Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        /* ====== 全局重置 ====== */
+        /* ====== Global Reset ====== */
         * {
             margin: 0;
             padding: 0;
@@ -14,10 +14,10 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-            background: #f5f3f0;
+            font-family: "Georgia", "Times New Roman", "Noto Serif SC", "Songti SC", serif;
+            background: #f8f6f2;
             color: #2c2c2c;
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
         a {
@@ -34,7 +34,7 @@
             padding: 0 24px;
         }
 
-        /* ====== 顶部横幅 ====== */
+        /* ====== Hero Banner ====== */
         .hero {
             background: linear-gradient(135deg, #5c1a1a 0%, #8b1a1a 40%, #a83232 100%);
             color: #fff;
@@ -55,20 +55,22 @@
             pointer-events: none;
         }
         .hero h1 {
-            font-size: 42px;
+            font-size: 40px;
             font-weight: 700;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .hero .subtitle {
             font-size: 18px;
-            margin-top: 8px;
-            opacity: 0.9;
+            margin-top: 6px;
+            opacity: 0.92;
             font-weight: 300;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .hero .tibetan-name {
             font-size: 16px;
             margin-top: 4px;
-            opacity: 0.7;
+            opacity: 0.65;
         }
         .hero .contact-row {
             display: flex;
@@ -76,6 +78,7 @@
             gap: 16px 30px;
             margin-top: 20px;
             font-size: 14px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .hero .contact-row i {
             margin-right: 6px;
@@ -85,7 +88,7 @@
             color: #fff;
         }
 
-        /* ====== 主体内容 ====== */
+        /* ====== Main Content ====== */
         .main-content {
             background: #fff;
             padding: 40px 0 60px;
@@ -100,16 +103,17 @@
         }
 
         .section-title {
-            font-size: 22px;
+            font-size: 21px;
             font-weight: 600;
             color: #5c1a1a;
             border-left: 4px solid #8b1a1a;
             padding-left: 14px;
             margin-bottom: 18px;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
-        /* ====== 基本信息两栏 ====== */
+        /* ====== Info Grid ====== */
         .info-grid {
             display: grid;
             grid-template-columns: auto 1fr;
@@ -125,7 +129,7 @@
             color: #333;
         }
 
-        /* ====== 时间线条目 ====== */
+        /* ====== Timeline Entries ====== */
         .entry {
             margin-bottom: 20px;
         }
@@ -152,6 +156,7 @@
             background: #fdf0ee;
             padding: 1px 10px;
             border-radius: 12px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .entry-sub {
             font-size: 14px;
@@ -173,7 +178,7 @@
             color: #8b1a1a;
         }
 
-        /* ====== 论文条目 ====== */
+        /* ====== Publication Entries ====== */
         .pub-item {
             margin-bottom: 16px;
             padding-left: 0;
@@ -188,6 +193,7 @@
         .pub-item .pub-title {
             font-weight: 600;
             color: #1a1a1a;
+            font-style: italic;
         }
         .pub-item .pub-journal {
             font-style: italic;
@@ -206,9 +212,10 @@
             padding: 0 8px;
             border-radius: 10px;
             margin-left: 6px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
-        /* ====== 语言/技能标签 ====== */
+        /* ====== Tags ====== */
         .tag-group {
             display: flex;
             flex-wrap: wrap;
@@ -226,7 +233,7 @@
             color: #8b1a1a;
         }
 
-        /* ====== 两列布局 ====== */
+        /* ====== Two-column Layout ====== */
         .two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -239,7 +246,7 @@
             }
         }
 
-        /* ====== 页脚 ====== */
+        /* ====== Footer ====== */
         .footer {
             text-align: center;
             padding: 28px 0;
@@ -247,12 +254,32 @@
             font-size: 13px;
             border-top: 1px solid #e8e3de;
             background: #fff;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .footer a {
             color: #8b1a1a;
         }
 
-        /* ====== 响应式 ====== */
+        /* ====== Section Sub-headings ====== */
+        .sub-heading {
+            font-size: 16px;
+            color: #8b1a1a;
+            margin: 18px 0 10px;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 4px;
+            font-weight: 600;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .sub-heading-sm {
+            font-size: 15px;
+            color: #8b1a1a;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* ====== Responsive ====== */
         @media (max-width: 600px) {
             .hero h1 { font-size: 28px; }
             .hero .subtitle { font-size: 15px; }
@@ -266,494 +293,397 @@
 </head>
 <body>
 
-<!-- ====== 顶部横幅 ====== -->
+<!-- ====== Hero Banner ====== -->
 <header class="hero">
     <div class="container">
-        <h1>桑吉次力</h1>
-        <div class="subtitle">博士后研究人员 · 兰州大学文学院</div>
-        <div class="tibetan-name">སངས་རྒྱས་ཚེ་རིང་། · Sangsrgyas Tshering</div>
+        <h1>Sangsrgyas Tshering</h1>
+        <div class="subtitle">Postdoctoral Researcher · School of Chinese Literatures and Languages, Lanzhou University</div>
+        <div class="tibetan-name">སངས་རྒྱས་ཚེ་རིང་། · 桑吉次力 </div>
         <div class="contact-row">
             <span><i class="fas fa-envelope"></i> <a href="mailto:sangjicili@lzu.edu.cn">sangjicili@lzu.edu.cn</a></span>
-            <span><i class="fas fa-phone"></i> 17794125667</span>
-            <span><i class="fas fa-map-marker-alt"></i> 兰州大学城关校区东区明道楼</span>
+            <span><i class="fas fa-envelope"></i> <a href="mailto:asang@mail.nankai.edu.cn">Bodskadduu@gmail.com</a></span>
+            <span><i class="fas fa-phone"></i> +86 17794125667</span>
+            <span><i class="fas fa-map-marker-alt"></i> Lanzhou University, Gansu, China</span>
             <span><i class="fas fa-globe"></i> <a href="https://orcid.org/0009-0008-1021-2409" target="_blank">ORCID: 0009-0008-1021-2409</a></span>
         </div>
     </div>
 </header>
 
-<!-- ====== 主内容 ====== -->
+<!-- ====== Main Content ====== -->
 <div class="main-content">
     <div class="container">
 
-        <!-- ====== 基本信息 ====== -->
+        <!-- ====== About ====== -->
         <div class="section">
-            <h2 class="section-title">基本信息</h2>
-            <div class="info-grid">
-                <span class="label">籍贯</span><span class="value">甘肃省甘南藏族自治州迭部县</span>
-                <span class="label">民族</span><span class="value">藏族</span>
-                <span class="label">出生日期</span><span class="value">1993年3月9日</span>
-                <span class="label">英文名</span><span class="value">Sangsrgyas Tshering（藏文）／ Sangji Cili（汉语拼音）</span>
+            <h2 class="section-title">About</h2>
+            <p style="font-size:15px; line-height:1.8; color:#444;">
+                I am a linguist specializing in Tibeto-Burman languages, with a focus on Tibetan (Tibetic) and Rgyalrongic languages. 
+                My research spans morphosyntax, historical linguistics, grammaticalization, language contact, and 
+                community-based language documentation. I received my Ph.D. from Nankai University (2025), 
+                with a dissertation on the morphosyntax of the Smar.rong variety of Zbu Rgyalrong. 
+                I was a visiting student at École Pratique des Hautes Études (EPHE-PSL) in Paris (2021–2022) 
+                under the supervision of Prof. Guillaume Jacques. I am currently a postdoctoral researcher 
+                (CuiYing Postdoctoral Fellow) at the School of Chinese Literatures and Languages, Lanzhou University.
+            </p>
+        </div>
+
+        <!-- ====== Research Interests ====== -->
+        <div class="section">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="tag-group">
+                <span class="tag">Morphosyntax</span>
+                <span class="tag">Historical Linguistics</span>
+                <span class="tag">Grammaticalization</span>
+                <span class="tag">Language Contact</span>
+                <span class="tag">Linguistic Typology</span>
+                <span class="tag">Language Documentation &amp; Description</span>
+                <span class="tag">Ethnolinguistics</span>
+                <span class="tag">Trans-Himalayan Linguistics</span>
+                <span class="tag">Tibetan (Tibetic) &amp; Rgyalrongic</span>
+                <span class="tag">Old Tibetan</span>
+                <span class="tag">Community-based Research</span>
             </div>
         </div>
 
-        <!-- ====== 工作经历 ====== -->
+        <!-- ====== Current Position ====== -->
         <div class="section">
-            <h2 class="section-title">工作经历</h2>
+            <h2 class="section-title">Current Position</h2>
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">博士后研究人员（萃英博士后）</span>
-                    <span class="entry-date">2025 – 至今</span>
+                    <span class="entry-title">Postdoctoral Researcher (CuiYing Postdoctoral Fellow)</span>
+                    <span class="entry-date">2025 – Present</span>
                 </div>
-                <div class="entry-sub">兰州大学文学院，兰州</div>
+                <div class="entry-sub">School of Chinese Literatures and Languages, Lanzhou University, Lanzhou, China</div>
             </div>
         </div>
 
-        <!-- ====== 教育背景 ====== -->
+        <!-- ====== Education ====== -->
         <div class="section">
-            <h2 class="section-title">教育背景</h2>
+            <h2 class="section-title">Education</h2>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">博士研究生 · 中国少数民族语言文学</span>
-                    <span class="entry-date">2020</span>
+                    <span class="entry-title">Ph.D. in Linguistics</span>
+                    <span class="entry-date">2025</span>
                 </div>
-                <div class="entry-sub">南开大学，天津</div>
-                <div class="entry-detail"><li>论文：日部嘉绒语玛荣话形态句法研究</li></div>
+                <div class="entry-sub">Nankai University, Tianjin, China</div>
+                <div class="entry-detail">
+                    <li>Dissertation: <em>日部嘉绒语玛荣话研究 A morphosyntactic study of the Smar.rong dialect of Zbu Rgyalrong</em></li>
+                </div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">硕士研究生 · 藏学（语言文学方向）</span>
+                    <span class="entry-title">M.A. in Tibetology (Languages and Literature)</span>
                     <span class="entry-date">2019</span>
                 </div>
-                <div class="entry-sub">中央民族大学，北京</div>
-                <div class="entry-detail"><li>论文：迭部益哇土语研究</li></div>
+                <div class="entry-sub">Minzu University of China, Beijing, China</div>
+                <div class="entry-detail">
+                    <li>Thesis: <em>ཐེ་བོ་གཡི་བའི་ལུང་སྐད་ཞིབ་འཇུག 迭部益哇土语研究 A study of the G-yi.ba variety of Thebo Tibetan</em></li>
+                </div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">本科 · 中国少数民族语言文学（藏）</span>
+                    <span class="entry-title">B.A. in Chinese Minority Languages and Literature (Tibetan)</span>
                     <span class="entry-date">2014</span>
                 </div>
-                <div class="entry-sub">中央民族大学，北京</div>
+                <div class="entry-sub">Minzu University of China, Beijing, China</div>
             </div>
 
-            <h3 style="font-size:16px; color:#8b1a1a; margin:16px 0 10px; border-bottom:1px dashed #ddd; padding-bottom:4px;">国际学术经历</h3>
+            <div class="sub-heading">International Experience</div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">联合培养博士生</span>
+                    <span class="entry-title">Visiting Student</span>
                     <span class="entry-date">2021 – 2022</span>
                 </div>
-                <div class="entry-sub">巴黎高等研究实践学院 – 巴黎文理研究大学（EPHE-PSL），法国</div>
+                <div class="entry-sub">École Pratique des Hautes Études (EPHE-PSL), Paris, France</div>
                 <div class="entry-detail">
-                    <li>外方导师：Guillaume Jacques（向柏霖），EPHE-PSL教授，CNRS-CRLAO研究主任</li>
-                    <li>研究课题：基于历史形态学的古藏语动词系统研究</li>
+                    <li>Advisor: Prof. Guillaume Jacques, EPHE-PSL &amp; CNRS-CRLAO</li>
                 </div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">语言顾问 &amp; 助教（在线）</span>
+                    <span class="entry-title">Language Consultant &amp; Teaching Assistant (Online)</span>
                     <span class="entry-date">2024 – 2025</span>
                 </div>
-                <div class="entry-sub">美国俄勒冈大学语言学系</div>
+                <div class="entry-sub">Department of Linguistics, University of Oregon, USA</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">短期学习 — 语义变化研究暑期学校</span>
+                    <span class="entry-title">Summer School — Semantic Shifts</span>
                     <span class="entry-date">2022</span>
                 </div>
-                <div class="entry-sub">法国国家科学院（CNRS）</div>
+                <div class="entry-sub">CNRS, Fréjus, France</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">短期学习 — 国际语言学田野调查暑校</span>
+                    <span class="entry-title">Summer School — Linguistic Fieldwork (FieldLing)</span>
                     <span class="entry-date">2022</span>
                 </div>
-                <div class="entry-sub">法国国立东方语言文化学院（INALCO）</div>
+                <div class="entry-sub">INALCO, Paris, France</div>
             </div>
         </div>
 
-        <!-- ====== 研究兴趣 ====== -->
+        <!-- ====== Publications ====== -->
         <div class="section">
-            <h2 class="section-title">研究兴趣与方向</h2>
-            <div class="tag-group">
-                <span class="tag">形态句法</span>
-                <span class="tag">历史语言学</span>
-                <span class="tag">语法化</span>
-                <span class="tag">语言接触</span>
-                <span class="tag">语言类型学</span>
-                <span class="tag">语言描写与典藏</span>
-                <span class="tag">语言与文化</span>
-                <span class="tag">汉藏语比较</span>
-                <span class="tag">古藏语</span>
-                <span class="tag">藏语方言</span>
-                <span class="tag">日部话（嘉绒）</span>
-            </div>
-        </div>
+            <h2 class="section-title">Publications</h2>
 
-        <!-- ====== 语言能力 ====== -->
-        <div class="section">
-            <h2 class="section-title">语言能力</h2>
-            <div class="tag-group">
-                <span class="tag"><strong>藏语</strong> 迭部话（母语），安多话 &amp; 拉萨话（流利）</span>
-                <span class="tag"><strong>汉语</strong> 普通话 · 流利</span>
-                <span class="tag"><strong>英语</strong> IELTS 6.5（2020）</span>
-                <span class="tag"><strong>法语</strong> 口语初级，阅读中级</span>
-                <span class="tag"><strong>日部嘉绒</strong> 研究知识</span>
-                <span class="tag"><strong>梵语</strong> 初级，研究知识</span>
-            </div>
-        </div>
-
-        <!-- ====== 科研项目 ====== -->
-        <div class="section">
-            <h2 class="section-title">科研项目</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="entry-title">藏语诗歌节律及相关韵律音系问题研究</span>
-                    <span class="entry-date">2021 – 至今</span>
-                </div>
-                <div class="entry-sub">国家社科基金重点项目（21AYY024）· 参与者（排名第3）</div>
-            </div>
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="entry-title">基于藏语方言词汇数据库的藏语同源语素研究</span>
-                    <span class="entry-date">2021 – 至今</span>
-                </div>
-                <div class="entry-sub">国家社科基金青年项目（21CYY039）· 参与者（排名第4）</div>
-            </div>
-        </div>
-
-        <!-- ====== 论文发表 ====== -->
-        <div class="section">
-            <h2 class="section-title">论文发表</h2>
-
-            <h3 style="font-size:16px; color:#8b1a1a; margin:0 0 12px;">已发表</h3>
+            <div class="sub-heading">Forthcoming</div>
 
             <div class="pub-item">
                 <div class="pub-authors">Guillaume Jacques, Li Shang, Liu Zhenyang, <strong>Sangsrgyas Tshering</strong>, Yang Qingxia.</div>
                 <div class="pub-title">Synchronic and historical phonology of the Gzitsha language.</div>
                 <div class="pub-journal">Linguistics of the Tibeto-Burman Area (ESCI)</div>
-                <div class="pub-doi">2026</div>
+                <div class="pub-doi">Forthcoming</div>
             </div>
+
+            <div class="pub-item">
+                <div class="pub-authors"><strong>Sangsrgyas Tshering</strong></div>
+                <div class="pub-title">'Law/rule' &gt; habitual: an unusual grammaticalization pathway in the Tibetic and Rgyalrongic languages.</div>
+                <div class="pub-journal">Folia Linguistica Historica (SSCI)</div>
+                <div class="pub-doi">Forthcoming</div>
+            </div>
+
+            <div class="sub-heading">2026</div>
 
             <div class="pub-item">
                 <div class="pub-authors"><strong>Sangsrgyas Tshering</strong>, Guillaume Jacques, Li Shang, Liu Zhenyang, Yang Qingxia.</div>
                 <div class="pub-title">Verb stem alternation in Gzitsha.</div>
-                <div class="pub-journal">Transactions of the Philological Society (AHCI)</div>
+                <div class="pub-journal">Transactions of the Philological Society (A&HCI)</div>
                 <div class="pub-doi">2026</div>
             </div>
 
             <div class="pub-item">
-                <div class="pub-authors">桑吉次力</div>
-                <div class="pub-title">日部嘉绒语玛荣话的亲涉和示证范畴</div>
-                <div class="pub-journal">《民族语文》(CSSCI) 28(2), 106-116</div>
+                <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
+                <div class="pub-title">日部嘉绒语玛荣话的亲涉和示证范畴 Egophoricity and evidentiality in Smar.rong Rgyalrong.</div>
+                <div class="pub-journal"><em>Minzu Yuwen</em> (《民族语文》, CSSCI), 28(2), 106–116</div>
                 <div class="pub-doi">2026</div>
             </div>
+
+            <div class="sub-heading">2025</div>
+
+            <div class="pub-item">
+                <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
+                <div class="pub-title">迭部藏语的体系统及其历时演变 The aspect system in Thebo Tibetan and its diachronic change.</div>
+                <div class="pub-journal"><em>Yuyanxue Luncong</em> (《语言学论丛》, CSSCI), 78(3), 135–150</div>
+                <div class="pub-doi">2025</div>
+            </div>
+
+            <div class="sub-heading">2024</div>
 
             <div class="pub-item">
                 <div class="pub-authors"><strong>Sangsrgyas Tshering</strong>, Erin Lowry, Shannon Kaspar, Connor Paddock, Ludwig Adisiswoyo, Nathaniel Aaron Sims, Mary S.</div>
                 <div class="pub-title">An interlinear glossed text in Thebo Tibetan: The story of Gser.mo.'tsho and Dngul.mo.'tsho.</div>
-                <div class="pub-journal">Linguistics of the Tibeto-Burman Area (ESCI) 49(1)</div>
+                <div class="pub-journal">Linguistics of the Tibeto-Burman Area (ESCI), 49(1)</div>
                 <div class="pub-doi"><a href="https://doi.org/10.1075/ltba.25018.tsh" target="_blank">doi:10.1075/ltba.25018.tsh</a></div>
             </div>
 
-            <div class="pub-item">
-                <div class="pub-authors">桑吉次力</div>
-                <div class="pub-title">迭部藏语的体系统及其历时演变</div>
-                <div class="pub-journal">《语言学论丛》(CSSCI) 78(3): 135-150</div>
-                <div class="pub-doi">2025</div>
-            </div>
+            <div class="sub-heading">2023</div>
 
             <div class="pub-item">
-                <div class="pub-authors">桑吉次力 &amp; 孙凯</div>
-                <div class="pub-title">實現-能力：藏語動詞的一個重要範疇</div>
-                <div class="pub-journal">《語言暨語言學》Language and Linguistics (SSCI) 26(3), 496-532</div>
+                <div class="pub-authors"><strong>Sangsrgyas Tshering</strong> &amp; Kai Sun (孙凯)</div>
+                <div class="pub-title">"Realization-Potential": A necessary and important semantic category of Tibetan verbs (实现-能力：藏语动词的一个重要范畴).</div>
+                <div class="pub-journal">Language and Linguistics (SSCI), 26(3), 496–532</div>
                 <div class="pub-doi"><a href="https://benjamins.com/catalog/lali.00206.tsh" target="_blank">doi:10.1075/lali.00206.tsh</a></div>
             </div>
 
             <div class="pub-item">
-                <div class="pub-authors">Daxue Yang, <strong>Sangsrgyas Tshering</strong>（通讯作者）, Jesse P. Gates.</div>
-                <div class="pub-title">A Voicing Rule for Non-continuant Obstruents in Thebo Tibetan.</div>
-                <div class="pub-journal">Language and Linguistics (SSCI) 25(4), 710-746</div>
+                <div class="pub-authors">Daxue Yang, <strong>Sangsrgyas Tshering</strong> (Corresponding author) &amp; Jesse P. Gates.</div>
+                <div class="pub-title">A voicing rule for non-continuant obstruents in Thebo Tibetan.</div>
+                <div class="pub-journal">Language and Linguistics (SSCI), 25(4), 710–746</div>
                 <div class="pub-doi"><a href="https://doi.org/10.1075/lali.00169.san" target="_blank">doi:10.1075/lali.00169.san</a></div>
             </div>
 
             <div class="pub-item">
                 <div class="pub-authors"><strong>Sangsrgyas Tshering</strong></div>
-                <div class="pub-title">Egophoricity and Evidentiality in Thebo Tibetan.</div>
-                <div class="pub-journal">Himalayan Linguistics 22(3), 34-56</div>
+                <div class="pub-title">Egophoricity and evidentiality in Thebo Tibetan.</div>
+                <div class="pub-journal">Himalayan Linguistics, 22(3), 34–56</div>
                 <div class="pub-doi"><a href="https://doi.org/10.5070/H922358997" target="_blank">doi:10.5070/H922358997</a></div>
             </div>
 
+            <div class="sub-heading">2020</div>
+
             <div class="pub-item">
-                <div class="pub-authors">桑吉次力</div>
-                <div class="pub-title">迭部藏語的"清音濁化" (The voicing of unvoiced obstruents in Thebo Tibetan).</div>
-                <div class="pub-journal">Cahiers de Linguistique Asie Orientale 49(1), 1-20</div>
+                <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
+                <div class="pub-title">迭部藏语的"清音浊化" The voicing of unvoiced obstruents in Thebo Tibetan.</div>
+                <div class="pub-journal">Cahiers de Linguistique Asie Orientale, 49(1), 1–20</div>
                 <div class="pub-doi"><a href="https://doi.org/10.1163/19606028-bja10001" target="_blank">doi:10.1163/19606028-bja10001</a></div>
             </div>
 
+            <div class="sub-heading">2019</div>
+
             <div class="pub-item">
-                <div class="pub-authors">桑吉次力</div>
-                <div class="pub-title">དེང་རབས་སྐད་བརྡ་རིག་པའི་མཐོང་ཐོན་ནས་བོད་སྐད་ལ་བལྟ་བ།（从现代语言学视角看藏语的语法范畴）</div>
-                <div class="pub-journal">《甘南民族文化研究》2: 107-117</div>
-                <div class="pub-doi">2019</div>
+                <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
+                <div class="pub-title">དེང་རབས་སྐད་བརྡ་རིག་པའི་མཐོང་ཐོན་ནས་བོད་སྐད་ལ་བལྟ་བ། A modern linguistic perspective on Tibetan grammatical categories.</div>
+                <div class="pub-journal">ཀན་ལྷོའི་མི་རིགས་རིག་གནས་ཞིབ་འཇུག Gannan Ethnic Culture Studies, 2: 107–117</div>
+                <div class="pub-doi">2019 (in Tibetan)</div>
             </div>
 
-            <div class="pub-item">
-                <div class="pub-authors">桑吉次力</div>
-                <div class="pub-title">ཐེ་བོའི་ཡུལ་སྐད་ཐོད་ཀྱི་བྱ་ཚིག་ཐལ་ལ་དཔྱད་པ།（论迭部藏语中动词"thal"的语法化过程）</div>
-                <div class="pub-journal">《甘南民族文化研究》3: 65-72</div>
-                <div class="pub-doi">2017</div>
-            </div>
-
-            <h3 style="font-size:16px; color:#8b1a1a; margin:20px 0 12px;">待发表</h3>
+            <div class="sub-heading">2017</div>
 
             <div class="pub-item">
-                <div class="pub-authors"><strong>Sangsrgyas Tshering</strong></div>
-                <div class="pub-title">'Law/rule' > habitual: an unusual grammaticalization pathway in the Tibetic and Rgyalrongic languages.</div>
-                <div class="pub-journal">Folia Linguistica Historica (SSCI)</div>
-                <div class="pub-doi">2027</div>
+                <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
+                <div class="pub-title">On the grammaticalization of the verb "thal" in Thebo Tibetan (ཐེ་བོའི་ཡུལ་སྐད་ཐོད་ཀྱི་བྱ་ཚིག་ཐལ་ལ་དཔྱད་པ།).</div>
+                <div class="pub-journal">ཀན་ལྷོའི་མི་རིགས་རིག་གནས་ཞིབ་འཇུག Gannan Ethnic Culture Studies, 3: 65–72</div>
+                <div class="pub-doi">2017 (in Tibetan)</div>
             </div>
         </div>
 
-        <!-- ====== 会议论文 ====== -->
+        <!-- ====== Conference Presentations ====== -->
         <div class="section">
-            <h2 class="section-title">会议论文</h2>
+            <h2 class="section-title">Conference Presentations</h2>
 
             <div class="entry">
                 <div class="entry-header">
                     <span class="entry-title">Different but Dependent: Egophoricity-Evidentiality Systems in Some Languages from the Tibetan Plateau</span>
                     <span class="entry-date">2025</span>
                 </div>
-                <div class="entry-sub">第3届示证及相关范畴学术研讨会 · 澳门大学，澳门</div>
+                <div class="entry-sub">The 3rd Symposium on Evidentiality and Related Fields, University of Macau, Macau</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">Argument indexing in Smar.rong dialect of Zbu Gyalrong（玛荣话的论元标引）</span>
+                    <span class="entry-title">Argument indexing in Smar.rong dialect of Zbu Gyalrong</span>
                     <span class="entry-date">2024</span>
                 </div>
-                <div class="entry-sub">第57届国际汉藏语言暨语言学会议 · 北京大学，北京</div>
+                <div class="entry-sub">The 57th International Conference on Sino-Tibetan Languages and Linguistics (ICSTLL 57), Peking University, Beijing</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">A preliminary account of "non-canonical" occurrences of epistemic markers in spontaneous speech data of Amdo Tibetan (与Zoe Tribur合作)</span>
+                    <span class="entry-title">Perception time as a semantic feature of evidentiality in Amdo Tibetan (with Zoe Tribur)</span>
                     <span class="entry-date">2024</span>
                 </div>
-                <div class="entry-sub">国际亲涉-示证研究工作坊 · 图宾根大学，德国</div>
+                <div class="entry-sub">The 57th Annual Meeting of the Societas Linguistica Europaea (SLE 2024), University of Helsinki, Finland</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">玛荣话的亲涉范畴</span>
+                    <span class="entry-title">A preliminary account of "non-canonical" occurrences of epistemic markers in spontaneous speech data of Amdo Tibetan (with Zoe Tribur)</span>
+                    <span class="entry-date">2024</span>
+                </div>
+                <div class="entry-sub">International Workshop on Ego-Evidentiality and the Right(s) to Know (Better), Tübingen, Germany</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">玛荣话的亲涉范畴 Egophoricity in Smar.rong dialect of Zbu Rgyalrong</span>
                     <span class="entry-date">2023</span>
                 </div>
-                <div class="entry-sub">第二届示证及相关范畴学术研讨会 · 北京师范大学珠海校区，珠海</div>
+                <div class="entry-sub">The 2nd Symposium on Evidentiality and Related Fields, Beijing Normal University (Zhuhai Campus), Zhuhai, China</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">Egophoricity in Thebo Tibetan（迭部藏语的亲涉范畴）</span>
+                    <span class="entry-title">Egophoricity in Thebo Tibetan</span>
                     <span class="entry-date">2022</span>
                 </div>
-                <div class="entry-sub">语义变化研究暑期学校 · Frejus，法国</div>
+                <div class="entry-sub">Semantic Shifts Summer School: From Lexicon to Grammar, Fréjus, France</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">迭部藏语的体，亲涉-示证系统</span>
+                    <span class="entry-title">Aspect, Egophoricity and Evidentiality in Thebo Tibetan</span>
                     <span class="entry-date">2022</span>
                 </div>
-                <div class="entry-sub">第五届藏语语言学研讨会 · 南开大学，天津</div>
+                <div class="entry-sub">The 5th Tibetan Language and Linguistics Forum, Nankai University, Tianjin, China</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">实现-能力：藏语动词的一个重要范畴</span>
+                    <span class="entry-title">"Realization-Potential": A necessary and important semantic category of Tibetan verbs</span>
                     <span class="entry-date">2021</span>
                 </div>
-                <div class="entry-sub">第二届历史语言学青年论坛 · 北京大学，北京</div>
+                <div class="entry-sub">The 2nd Youth Forum on Historical Linguistics, Peking University, Beijing, China</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">藏语的"第三类动词"</span>
+                    <span class="entry-title">Potential verbs in Tibetan (藏语的"第三类动词")</span>
                     <span class="entry-date">2021</span>
                 </div>
-                <div class="entry-sub">第五届语言类型学国际研讨会 · 广西民族大学，南宁</div>
+                <div class="entry-sub">The 5th International Forum on Linguistic Typology, Guangxi University for Nationalities, Nanning, China</div>
             </div>
+                    </div>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="entry-title">迭部藏语的"清音浊化"</span>
-                    <span class="entry-date">2018</span>
-                </div>
-                <div class="entry-sub">中国民族语言学会汉藏语言文化专业委员会第一届学术研讨会 · 中国传媒大学，北京</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="entry-title">ཐེ་བོའི་ཡུལ་སྐད་ཀྱི་ཁྱད་ཆོས་འགའ་ལ་དཔྱད་པ།（迭部藏语的若干特点）</span>
-                    <span class="entry-date">2018</span>
-                </div>
-                <div class="entry-sub">第九届纪念宗喀巴大师学术研讨会 · 中央民族大学，北京</div>
-            </div>
-        </div>
-
-        <!-- ====== 两列布局：翻译 + 奖学金 + 教学 + 讲座 ====== -->
+        <!-- ====== Teaching & Social Media (Two Columns) ====== -->
         <div class="two-col">
-
-            <!-- 左列 -->
             <div>
                 <div class="section">
-                    <h2 class="section-title">翻译作品</h2>
+                    <h2 class="section-title">Teaching Experience</h2>
+
                     <div class="entry">
                         <div class="entry-header">
-                            <span class="entry-title">英翻藏：卓克基嘉绒语的时体范畴</span>
+                            <span class="entry-title">Introduction to Linguistic Fieldwork</span>
                             <span class="entry-date">2025</span>
                         </div>
-                        <div class="entry-sub">原文：Lin, Youjing (2003) Tense and aspect morphology in the Zhuokeji rGyalrong verb. <em>Cahiers de Linguistique Asie Orientale</em> 32(2): 245–286.</div>
-                        <div class="entry-detail"><li>收录于《藏缅语族语言语音和语法研究》（格日杰布，才让太主编），四川民族出版社</li></div>
-                    </div>
-                </div>
-
-                <div class="section">
-                    <h2 class="section-title">奖学金</h2>
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">国家留学基金委奖学金（联合培养博士生）</span>
-                            <span class="entry-date">2021 – 2022</span>
-                        </div>
-                        <div class="entry-sub">巴黎高等研究实践学院（EPHE）· 法国国家科学院-东亚语言研究所（CNRS-CRLAO）</div>
-                        <div class="entry-detail"><li>研究课题：基于历史形态学的古藏语动词系统研究</li></div>
-                    </div>
-                </div>
-
-                <div class="section">
-                    <h2 class="section-title">邀请讲座</h2>
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">田野之路：作为母语人和研究者 (Balancing positionalities as speaker and researcher)</span>
-                            <span class="entry-date">2023</span>
-                        </div>
-                        <div class="entry-sub">The 2023 Himalayan Languages of Sichuan Workshop · 美国史密森尼民俗和文化遗产中心（CFCH）资助</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 右列 -->
-            <div>
-                <div class="section">
-                    <h2 class="section-title">教学实践</h2>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">语言田野调查入门</span>
-                            <span class="entry-date">2025</span>
-                        </div>
-                        <div class="entry-sub">中央民族大学中国少数民族语言文学学院（在线）</div>
+                        <div class="entry-sub">Minzu University of China (Online)</div>
                     </div>
 
                     <div class="entry">
                         <div class="entry-header">
-                            <span class="entry-title">语言学入门</span>
+                            <span class="entry-title">Introduction to Linguistics</span>
                             <span class="entry-date">2024</span>
                         </div>
-                        <div class="entry-sub">第七届汉藏语研究方法暑期工作坊 · 南开大学</div>
+                        <div class="entry-sub">The 7th Sino-Tibetan Research Methodology Workshop, Nankai University</div>
                     </div>
 
                     <div class="entry">
                         <div class="entry-header">
-                            <span class="entry-title">藏羌语语法研究专题</span>
+                            <span class="entry-title">Advanced Tibetan and Qiangic Studies</span>
                             <span class="entry-date">2024</span>
                         </div>
-                        <div class="entry-sub">第七届汉藏语研究方法暑期工作坊 · 南开大学</div>
+                        <div class="entry-sub">The 7th Sino-Tibetan Research Methodology Workshop, Nankai University</div>
                     </div>
 
                     <div class="entry">
                         <div class="entry-header">
-                            <span class="entry-title">高级藏语</span>
+                            <span class="entry-title">Advanced Tibetan</span>
                             <span class="entry-date">2017 – 2019</span>
                         </div>
-                        <div class="entry-sub">汉藏语言学小组 · 中央民族大学-首都师范大学-北京大学</div>
+                        <div class="entry-sub">Sino-Tibetan Linguistic Program </div>
                     </div>
-                </div>
 
-                <div class="section">
-                    <h2 class="section-title">北京大学旁听课程</h2>
-                    <div class="entry-detail">
-                        <li>田野调查的形态句法（2018-2019第2学期，2022-2023第2学期）</li>
-                        <li>语篇：韵律与语法（2021-2022第1学期）</li>
-                        <li>当代音系学（2018-2019第1学期）</li>
+                    <div class="entry">
+                        <div class="entry-header">
+                            <span class="entry-title">Teaching Assistant — Chinese as a Foreign Language</span>
+                            <span class="entry-date">2021</span>
+                        </div>
+                        <div class="entry-sub">School of Literature, Nankai University</div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ====== 其它经历与技能 ====== -->
-        <div class="section">
-            <h2 class="section-title">其它经历与技能</h2>
-
-            <div class="two-col">
-                <div>
-                    <h3 style="font-size:15px; color:#8b1a1a; margin-bottom:8px;">学生服务 / 工作</h3>
+            <div>
+                <div class="section">
+                    <h2 class="section-title">Training &amp; Workshops</h2>
                     <div class="entry-detail">
-                        <li>"留学生汉语"课程助教 · 南开大学文学院（2021）</li>
-                        <li>研究生会主席 · 中央民族大学藏学研究院（2017-2018）</li>
-                    </div>
-
-                    <h3 style="font-size:15px; color:#8b1a1a; margin:16px 0 8px;">期刊审稿</h3>
-                    <div class="entry-detail">
-                        <li>《语言学论丛》(CSSCI) · 2026</li>
-                        <li>Cahiers de Linguistique Asie Orientale · 2025</li>
-                        <li>Language and Linguistics (SSCI) · 2022</li>
-                    </div>
-
-                    <h3 style="font-size:15px; color:#8b1a1a; margin:16px 0 8px;">新媒体运营</h3>
-                    <div class="entry-detail">
-                        <li>微信公众号 <strong>Bodskaddu</strong> 主理人之一（2018–至今）</li>
-                        <li>发布藏语、藏缅语相关学术动态与语言学科普知识</li>
+                        <li>Semantic Shifts Summer School, CNRS, Fréjus, France (2022)</li>
+                        <li>International Summer School on Linguistic Fieldwork (FieldLing), INALCO, Paris (2022)</li>
+                        <li>Fudan Intensive Summer Teaching (FIST) — Linguistic Typology (2021)</li>
+                        <li>1st Winter Tibetan Language Research Workshop, Nankai University (2018)</li>
+                        <li>3rd Sino-Tibetan Research Methodology Workshop, Smithsonian &amp; Nankai (2018)</li>
+                        <li>2nd Sino-Tibetan Research Methodology Workshop, Smithsonian &amp; Nankai (2017)</li>
                     </div>
                 </div>
 
-                <div>
-                    <h3 style="font-size:15px; color:#8b1a1a; margin-bottom:8px;">志愿服务</h3>
-                    <div class="entry-detail">
-                        <li>第六届藏语语言学研讨会 · 南开大学（2024）</li>
-                        <li>第七届汉藏语研究方法暑期工作坊 · 南开大学（2024）</li>
-                        <li>赵元任语言学学术思想国际研讨会 · 南开大学（2023）</li>
-                        <li>第六届汉藏语研究方法暑期工作坊 · 南开大学（2022）</li>
-                        <li>第五届汉藏语研究方法暑期工作坊 · 南开大学（2020）</li>
-                    </div>
-
-                    <h3 style="font-size:15px; color:#8b1a1a; margin:16px 0 8px;">专业技能</h3>
-                    <div class="tag-group">
-                        <span class="tag">ELAN（语料转写）</span>
-                        <span class="tag">FLEx（语法标注）</span>
-                        <span class="tag">Praat（声学分析）</span>
-                        <span class="tag">Audacity（音频编辑）</span>
-                        <span class="tag">QGIS（地图制作）</span>
-                        <span class="tag">L<sup>A</sup>T<sub>E</sub>X</span>
-                        <span class="tag">MS Office</span>
-                        <span class="tag">NCRE二级</span>
-                    </div>
-                </div>
             </div>
         </div>
 
     </div>
 </div>
 
-<!-- ====== 页脚 ====== -->
+<!-- ====== Footer ====== -->
 <div class="footer">
     <div class="container">
-        &copy; 2025 桑吉次力 &nbsp;·&nbsp; 网站基于 GitHub Pages 构建
-        &nbsp;·&nbsp; <a href="mailto:sangjicili@lzu.edu.cn">联系我</a>
+        &copy; 2025 Sangsrgyas Tshering &nbsp;·&nbsp; Built with GitHub Pages
+        &nbsp;·&nbsp; <a href="mailto:sangjicili@lzu.edu.cn">Contact</a>
+        &nbsp;·&nbsp; <a href="https://orcid.org/0009-0008-1021-2409" target="_blank">ORCID</a>
     </div>
 </div>
 
