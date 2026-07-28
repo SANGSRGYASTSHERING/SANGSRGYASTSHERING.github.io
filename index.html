@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sangsrgyas Tshering · Academic Homepage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta name="description" content="Official academic homepage of Sangsrgyas Tshering, a linguist specializing in Tibetan, Rgyalrongic, and Tibeto-Burman languages.">
+    <meta name="author" content="Sangsrgyas Tshering">
+    <link rel="canonical" href="https://sangsrgyastshering.github.io/">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         * {
@@ -14,7 +21,17 @@
         }
 
         body {
-            font-family: "Georgia", "Times New Roman", "Jomolhari", "Noto Serif Tibetan", "Tibetan Machine Uni", "Microsoft Himalaya", "Kailasa", "Noto Serif SC", "Songti SC", serif;
+            font-family:
+                "Georgia",
+                "Times New Roman",
+                "Jomolhari",
+                "Noto Serif Tibetan",
+                "Tibetan Machine Uni",
+                "Microsoft Himalaya",
+                "Noto Serif SC",
+                "Songti SC",
+                serif;
+
             background: #f8f6f2;
             color: #2c2c2c;
             line-height: 1.8;
@@ -37,62 +54,105 @@
         }
 
         /* ====== Hero Banner ====== */
+
         .hero {
             background:
-                linear-gradient(135deg, rgba(60,30,20,0.75) 0%, rgba(100,40,30,0.70) 40%, rgba(140,60,40,0.65) 100%),
-                url('https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center center / cover no-repeat;
+                linear-gradient(
+                    135deg,
+                    rgba(60, 30, 20, 0.78) 0%,
+                    rgba(100, 40, 30, 0.72) 45%,
+                    rgba(140, 60, 40, 0.68) 100%
+                ),
+                url("https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80")
+                center center / cover no-repeat;
+
             color: #fff;
-            padding: 64px 0 44px;
-            position: relative;
-            overflow: hidden;
-            min-height: 320px;
+            padding: 55px 0;
+            min-height: 350px;
         }
 
-        .hero h1 {
+        .hero-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .hero-info h1 {
             font-size: 44px;
             font-weight: 700;
             letter-spacing: 1px;
+            line-height: 1.25;
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
-        .hero .subtitle {
-            font-size: 20px;
-            margin-top: 8px;
-            opacity: 0.92;
-            font-weight: 300;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-        }
-
-        .hero .tibetan-name {
-            font-size: 24px;
+        .tibetan-name {
+            font-size: 25px;
             margin-top: 10px;
-            opacity: 0.85;
-            font-family: "Jomolhari", "Noto Serif Tibetan", "Tibetan Machine Uni", "Microsoft Himalaya", serif;
+            margin-bottom: 12px;
+            opacity: 0.92;
+            line-height: 1.5;
+            font-family:
+                "Jomolhari",
+                "Noto Serif Tibetan",
+                "Tibetan Machine Uni",
+                "Microsoft Himalaya",
+                serif;
         }
 
-        .hero .contact-row {
+        .subtitle {
+            font-size: 21px;
+            line-height: 1.4;
+            font-weight: 400;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .affiliation {
+            font-size: 20px;
+            line-height: 1.4;
+            margin-top: 2px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .profile-photo {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            border-radius: 0;
+            border: 5px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-photo {
+            justify-self: end;
+        }
+
+        .contact-row {
             display: flex;
-            flex-wrap: wrap;
-            gap: 16px 32px;
+            flex-direction: column;
+            gap: 5px;
             margin-top: 22px;
             font-size: 15px;
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
-        .hero .contact-row i {
+        .contact-row i {
+            width: 20px;
             margin-right: 6px;
-            opacity: 0.7;
+            opacity: 0.75;
         }
 
-        .hero .contact-row a {
+        .contact-row a {
             color: #fff;
         }
 
         /* ====== Main Content ====== */
+
         .main-content {
             background: #fff;
             padding: 44px 0 64px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
         }
 
         .section {
@@ -115,6 +175,7 @@
         }
 
         /* ====== Module Menu ====== */
+
         .module-menu {
             display: flex;
             flex-wrap: wrap;
@@ -148,7 +209,33 @@
             display: block;
         }
 
+        /* ====== About ====== */
+
+        .about-text {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        /* ====== Research Tags ====== */
+
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tag {
+            background: #f5f0ed;
+            color: #4a2c2c;
+            padding: 4px 16px;
+            border-radius: 18px;
+            font-size: 15px;
+            border: 1px solid #e0d6d0;
+        }
+
         /* ====== Timeline Entries ====== */
+
         .entry {
             margin-bottom: 22px;
         }
@@ -192,7 +279,6 @@
             font-size: 15px;
             color: #444;
             margin-top: 6px;
-            padding-left: 0;
         }
 
         .entry-detail li {
@@ -205,7 +291,8 @@
             color: #8b1a1a;
         }
 
-        /* ====== Publication Entries ====== */
+        /* ====== Publications ====== */
+
         .pub-item {
             margin-bottom: 18px;
             padding-left: 16px;
@@ -214,47 +301,38 @@
             border-left: 2px solid #eee;
         }
 
-        .pub-item .pub-authors {
+        .pub-authors {
             color: #333;
         }
 
-        .pub-item .pub-title {
+        .pub-title {
             font-weight: 600;
             color: #1a1a1a;
         }
 
-        .pub-item .pub-journal {
+        .pub-journal {
             font-style: italic;
             color: #555;
         }
 
-        .pub-item .pub-doi {
+        .pub-doi {
             font-size: 14px;
             color: #8b1a1a;
             word-break: break-all;
         }
 
-        /* ====== Tags ====== */
-        .tag-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .tag {
-            background: #f5f0ed;
-            color: #4a2c2c;
-            padding: 4px 16px;
-            border-radius: 18px;
-            font-size: 15px;
-            border: 1px solid #e0d6d0;
-        }
-
-        .tag strong {
+        .sub-heading {
+            font-size: 18px;
             color: #8b1a1a;
+            margin: 20px 0 12px;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 4px;
+            font-weight: 600;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
         /* ====== Two-column Layout ====== */
+
         .two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -262,6 +340,7 @@
         }
 
         /* ====== Footer ====== */
+
         .footer {
             text-align: center;
             padding: 32px 0;
@@ -276,44 +355,24 @@
             color: #8b1a1a;
         }
 
-        /* ====== Section Sub-headings ====== */
-        .sub-heading {
-            font-size: 18px;
-            color: #8b1a1a;
-            margin: 20px 0 12px;
-            border-bottom: 1px dashed #ddd;
-            padding-bottom: 4px;
-            font-weight: 600;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-        }
+        /* ====== Responsive Design ====== */
 
-        /* ====== About paragraph ====== */
-        .about-text {
-            font-size: 17px;
-            line-height: 1.9;
-            color: #444;
-        }
-
-        /* ====== Responsive ====== */
-
-         .profile-photo {
-        width: 140px;
-        height: 140px;
-        object-fit: cover;
-        border-radius: 50%;
-        display: block;
-        margin-bottom: 20px;
-        border: 4px solid rgba(255, 255, 255, 0.85);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    }
-
-    @media (max-width: 600px) {
-        .profile-photo {
-            width: 110px;
-            height: 110px;
-        }
-    }
         @media (max-width: 700px) {
+            .hero-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .hero-photo {
+                justify-self: start;
+                order: -1;
+            }
+
+            .profile-photo {
+                width: 220px;
+                height: 220px;
+            }
+
             .two-col {
                 grid-template-columns: 1fr;
                 gap: 28px;
@@ -326,24 +385,27 @@
             }
 
             .hero {
-                padding: 40px 0 30px;
-                min-height: auto;
-            }
-
-            .hero h1 {
-                font-size: 30px;
-            }
-
-            .hero .subtitle {
-                font-size: 17px;
-            }
-
-            .hero .tibetan-name {
-                font-size: 21px;
+                padding: 40px 0 35px;
             }
 
             .container {
                 padding: 0 18px;
+            }
+
+            .hero-info h1 {
+                font-size: 31px;
+            }
+
+            .tibetan-name {
+                font-size: 22px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .affiliation {
+                font-size: 17px;
             }
 
             .section-title {
@@ -384,373 +446,652 @@
                 padding: 8px 14px;
             }
         }
-        
     </style>
 </head>
 
 <body>
 
-<!-- ====== Hero Banner ====== -->
-<header class="hero">
-    <div class="container">
-         <img src="profile.png"
-             alt="Portrait of Sangsrgyas Tshering"
-             class="profile-photo">
-        <h1>Sangsrgyas Tshering</h1>
-        <div class="subtitle">Postdoctoral Researcher · School of Chinese Literatures and Languages, Lanzhou University</div>
-        <div class="tibetan-name"> སངས་རྒྱས་ཚེ་རིང་། · 桑吉次力</div>
+    <!-- ====== Hero Banner ====== -->
 
-        <div class="contact-row">
-            <span>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:sangjicili@lzu.edu.cn">sangjicili@lzu.edu.cn</a>
-            </span>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-layout">
 
-            <span>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:Bodskadduu@gmail.com">Bodskadduu@gmail.com</a>
-            </span>
+                <!-- 左侧信息 -->
+                <div class="hero-info">
+                    <h1>Sangsrgyas Tshering</h1>
 
-            <span>
-                <i class="fas fa-map-marker-alt"></i>
-                Lanzhou University, Gansu, China
-            </span>
+                    <div class="tibetan-name">
+                        སངས་རྒྱས་ཚེ་རིང་། · 桑吉次力
+                    </div>
 
-            <span>
-                <i class="fas fa-globe"></i>
-                <a href="https://orcid.org/0009-0008-1021-2409" target="_blank">
-                    ORCID: 0009-0008-1021-2409
-                </a>
-            </span>
-        </div>
-    </div>
-</header>
+                    <div class="subtitle">
+                        Postdoctoral Researcher ·
+                    </div>
 
-<!-- ====== Main Content ====== -->
-<div class="main-content">
-    <div class="container">
+                    <div class="affiliation">
+                        School of Chinese Literatures and Languages, Lanzhou University
+                    </div>
 
-        <!-- ====== Module Menu ====== -->
-        <nav class="module-menu" aria-label="Homepage sections">
-            <button type="button" data-target="home-panel" class="active">Home</button>
-            <button type="button" data-target="education-panel">Education</button>
-            <button type="button" data-target="publications-panel">Publications</button>
-            <button type="button" data-target="teaching-panel">Teaching &amp; Training</button>
-        </nav>
+                    <div class="contact-row">
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:sangjicili@lzu.edu.cn">
+                                sangjicili@lzu.edu.cn
+                            </a>
+                        </span>
 
-        <!-- ====== Home Panel ====== -->
-        <div id="home-panel" class="module-panel active">
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:Bodskadduu@gmail.com">
+                                Bodskadduu@gmail.com
+                            </a>
+                        </span>
 
-            <!-- ====== About ====== -->
-            <div class="section">
-                <h2 class="section-title">About</h2>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Lanzhou University, Gansu, China
+                        </span>
 
-                <p class="about-text">
-                    I am a linguist working on Tibeto-Burman languages, particularly Tibetan (Tibetic) and Rgyalrongic. My research interests include morphosyntax,
-                    historical linguistics, grammaticalization, language contact, and community-based language documentation.
-                    I received my Ph.D. from Nankai University in 2025, with a dissertation on the morphosyntax of the Smar.rong variety of Zbu Rgyalrong.
-                    From 2021 to 2022, I was a visiting student at the École Pratique des Hautes Études (EPHE–PSL) and
-                    Centre de recherches linguistiques sur l’Asie orientale (CRLAO) in Paris.
-                    I am currently a postdoctoral researcher at the School of Chinese Literatures and Languages at Lanzhou University.
-                </p>
+                        <span>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://orcid.org/0009-0008-1021-2409"
+                               target="_blank">
+                                ORCID: 0009-0008-1021-2409
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 右侧照片 -->
+                <div class="hero-photo">
+                    <img src="profile.png"
+                         alt="Portrait of Sangsrgyas Tshering"
+                         class="profile-photo">
+                </div>
+
             </div>
-
-            <!-- ====== Research Interests ====== -->
-            <div class="section">
-                <h2 class="section-title">Research Interests</h2>
-
-                <div class="tag-group">
-                    <span class="tag">Morphosyntax</span>
-                    <span class="tag">Historical Linguistics</span>
-                    <span class="tag">Grammaticalization</span>
-                    <span class="tag">Language Contact</span>
-                    <span class="tag">Linguistic Typology</span>
-                    <span class="tag">Language Documentation &amp; Description</span>
-                    <span class="tag">Ethnolinguistics</span>
-                    <span class="tag">Trans-Himalayan Linguistics</span>
-                    <span class="tag">Tibetan (Tibetic) &amp; Rgyalrongic</span>
-                    <span class="tag">Old Tibetan</span>
-                    <span class="tag">Community-based Research</span>
-                </div>
-            </div>
-
         </div>
+    </header>
 
-        <!-- ====== Education Panel ====== -->
-        <div id="education-panel" class="module-panel">
+    <!-- ====== Main Content ====== -->
 
-            <div class="section">
-                <h2 class="section-title">Education</h2>
+    <main class="main-content">
+        <div class="container">
 
-                <div class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title">Ph.D. in Chinese Minority Languages and Literature (Linguistics)</span>
-                        <span class="entry-date">2025</span>
-                    </div>
+            <!-- ====== Module Menu ====== -->
 
-                    <div class="entry-sub">Nankai University, Tianjin, China</div>
+            <nav class="module-menu" aria-label="Homepage sections">
+                <button type="button"
+                        data-target="home-panel"
+                        class="active">
+                    Home
+                </button>
 
-                    <div class="entry-detail">
-                        <li>
-                            Dissertation:
-                            <em>日部嘉绒语玛荣话形态句法研究 A morphosyntactic study of the Smar.rong variety of Zbu Rgyalrong</em>
-                        </li>
+                <button type="button"
+                        data-target="education-panel">
+                    Education
+                </button>
 
-                        <li>
-                            Advisor: Prof. Yeshes Vodgsal Atshogs ཡེ་ཤེས་འོད་གསལ་ཨ་ཚོགས། 意西微萨·阿错
-                        </li>
-                    </div>
+                <button type="button"
+                        data-target="publications-panel">
+                    Publications
+                </button>
+
+                <button type="button"
+                        data-target="teaching-panel">
+                    Teaching &amp; Training
+                </button>
+            </nav>
+
+            <!-- ====== Home Panel ====== -->
+
+            <section id="home-panel" class="module-panel active">
+
+                <div class="section">
+                    <h2 class="section-title">About</h2>
+
+                    <p class="about-text">
+                        I am a linguist working on Tibeto-Burman languages,
+                        particularly Tibetan (Tibetic) and Rgyalrongic.
+                        My research interests include morphosyntax, historical
+                        linguistics, grammaticalization, language contact, and
+                        community-based language documentation.
+
+                        I received my Ph.D. from Nankai University in 2025,
+                        with a dissertation on the morphosyntax of the Smar.rong
+                        variety of Zbu Rgyalrong.
+
+                        From 2021 to 2022, I was a visiting student at the
+                        École Pratique des Hautes Études (EPHE–PSL) and Centre
+                        de recherches linguistiques sur l’Asie orientale
+                        (CRLAO) in Paris.
+
+                        I am currently a postdoctoral researcher at the School
+                        of Chinese Literatures and Languages at Lanzhou University.
+                    </p>
                 </div>
 
-                <div class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title">M.A. in Tibetology (Languages and Literature)</span>
-                        <span class="entry-date">2019</span>
-                    </div>
+                <div class="section">
+                    <h2 class="section-title">Research Interests</h2>
 
-                    <div class="entry-sub">Minzu University of China, Beijing, China</div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title">B.A. in Chinese Minority Languages and Literature (Tibetan)</span>
-                        <span class="entry-date">2014</span>
-                    </div>
-
-                    <div class="entry-sub">Minzu University of China, Beijing, China</div>
-                </div>
-
-                <div class="sub-heading">International Experience</div>
-
-                <div class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title">Visiting Student</span>
-                        <span class="entry-date">2021 – 2022</span>
-                    </div>
-
-                    <div class="entry-sub">
-                        École Pratique des Hautes Études (EPHE-PSL)-Centre de recherches linguistiques sur l’Asie orientale (CRLAO)， Paris, France
-                    </div>
-
-                    <div class="entry-detail">
-                        <li>Advisor: Prof. Guillaume Jacques</li>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title">Language Consultant &amp; Teaching Assistant (Online)</span>
-                        <span class="entry-date">2024 – 2025</span>
-                    </div>
-
-                    <div class="entry-sub">Department of Linguistics, University of Oregon, USA</div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- ====== Publications Panel ====== -->
-        <div id="publications-panel" class="module-panel">
-
-            <div class="section">
-                <h2 class="section-title">Publications</h2>
-
-                <div class="sub-heading">Forthcoming</div>
-
-                <div class="pub-item">
-                    <div class="pub-authors"><strong>Sangsrgyas Tshering</strong></div>
-                    <div class="pub-title">'Law/rule' &gt; habitual: an unusual grammaticalization pathway in the Tibetic and Rgyalrongic languages.</div>
-                    <div class="pub-journal">Folia Linguistica Historica (SSCI)</div>
-                    <div class="pub-doi">Forthcoming</div>
-                </div>
-
-                <div class="sub-heading">2026</div>
-
-                <div class="pub-item">
-                    <div class="pub-authors">Guillaume Jacques, Li Shang, Liu Zhenyang, <strong>Sangsrgyas Tshering</strong>, Yang Qingxia.</div>
-                    <div class="pub-title">Synchronic and historical phonology of the Gzitsha language.</div>
-                    <div class="pub-journal">Linguistics of the Tibeto-Burman Area (ESCI)</div>
-                </div>
-
-                <div class="pub-item">
-                    <div class="pub-authors"><strong>Sangsrgyas Tshering</strong>, Guillaume Jacques, Li Shang, Liu Zhenyang, Yang Qingxia.</div>
-                    <div class="pub-title">Verb stem alternation in Gzitsha.</div>
-                    <div class="pub-journal">Transactions of the Philological Society (A&amp;HCI)</div>
-                </div>
-
-                <div class="pub-item">
-                    <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
-                    <div class="pub-title">日部嘉绒语玛荣话的亲涉和示证范畴 Egophoricity and evidentiality in Smar.rong Rgyalrong.</div>
-                    <div class="pub-journal"><em>Minzu Yuwen</em> (《民族语文》, CSSCI), 28(2), 106–116</div>
-                </div>
-
-                <div class="pub-item">
-                    <div class="pub-authors"><strong>Sangsrgyas Tshering</strong>, Erin Lowry, Shannon Kaspar, Connor Paddock, Ludwig Adisiswoyo, Nathaniel Aaron Sims, Mary S.</div>
-                    <div class="pub-title">An interlinear glossed text in Thebo Tibetan: The story of Gser.mo.'tsho and Dngul.mo.'tsho.</div>
-                    <div class="pub-journal">Linguistics of the Tibeto-Burman Area (ESCI), 49(1), 83–106</div>
-                    <div class="pub-doi">
-                        <a href="https://doi.org/10.1075/ltba.25018.tsh" target="_blank">doi:10.1075/ltba.25018.tsh</a>
+                    <div class="tag-group">
+                        <span class="tag">Morphosyntax</span>
+                        <span class="tag">Historical Linguistics</span>
+                        <span class="tag">Grammaticalization</span>
+                        <span class="tag">Language Contact</span>
+                        <span class="tag">Linguistic Typology</span>
+                        <span class="tag">Language Documentation &amp; Description</span>
+                        <span class="tag">Ethnolinguistics</span>
+                        <span class="tag">Trans-Himalayan Linguistics</span>
+                        <span class="tag">Tibetan (Tibetic) &amp; Rgyalrongic</span>
+                        <span class="tag">Old Tibetan</span>
+                        <span class="tag">Community-based Research</span>
                     </div>
                 </div>
 
-                <div class="sub-heading">2025</div>
+            </section>
 
-                <div class="pub-item">
-                    <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
-                    <div class="pub-title">迭部藏语的体系统及其历时演变 The aspect system in Thebo Tibetan and its diachronic change.</div>
-                    <div class="pub-journal"><em>Yuyanxue Luncong</em> (《语言学论丛》, CSSCI), 78(3), 135–150</div>
-                </div>
+            <!-- ====== Education Panel ====== -->
 
-                <div class="pub-item">
-                    <div class="pub-authors"><strong>Sangsrgyas Tshering</strong> &amp; Kai Sun (孙凯)</div>
-                    <div class="pub-title">实现-能力：藏语动词的一个重要范畴 "Realization-Potential": A necessary and important semantic category of Tibetan verbs.</div>
-                    <div class="pub-journal">Language and Linguistics (SSCI), 26(3), 496–532</div>
-                    <div class="pub-doi">
-                        <a href="https://benjamins.com/catalog/lali.00206.tsh" target="_blank">doi:10.1075/lali.00206.tsh</a>
+            <section id="education-panel" class="module-panel">
+
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="entry">
+                        <div class="entry-header">
+                            <span class="entry-title">
+                                Ph.D. in Chinese Minority Languages and Literature
+                                (Linguistics)
+                            </span>
+
+                            <span class="entry-date">2025</span>
+                        </div>
+
+                        <div class="entry-sub">
+                            Nankai University, Tianjin, China
+                        </div>
+
+                        <ul class="entry-detail">
+                            <li>
+                                Dissertation:
+                                <em>
+                                    日部嘉绒语玛荣话形态句法研究
+                                    A morphosyntactic study of the Smar.rong
+                                    variety of Zbu Rgyalrong
+                                </em>
+                            </li>
+
+                            <li>
+                                Advisor: Prof. Yeshes Vodgsal Atshogs
+                                ཡེ་ཤེས་འོད་གསལ་ཨ་ཚོགས།
+                                意西微萨·阿错
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="entry">
+                        <div class="entry-header">
+                            <span class="entry-title">
+                                M.A. in Tibetology (Languages and Literature)
+                            </span>
+
+                            <span class="entry-date">2019</span>
+                        </div>
+
+                        <div class="entry-sub">
+                            Minzu University of China, Beijing, China
+                        </div>
+                    </div>
+
+                    <div class="entry">
+                        <div class="entry-header">
+                            <span class="entry-title">
+                                B.A. in Chinese Minority Languages and Literature
+                                (Tibetan)
+                            </span>
+
+                            <span class="entry-date">2014</span>
+                        </div>
+
+                        <div class="entry-sub">
+                            Minzu University of China, Beijing, China
+                        </div>
+                    </div>
+
+                    <h3 class="sub-heading">International Experience</h3>
+
+                    <div class="entry">
+                        <div class="entry-header">
+                            <span class="entry-title">Visiting Student</span>
+                            <span class="entry-date">2021 – 2022</span>
+                        </div>
+
+                        <div class="entry-sub">
+                            École Pratique des Hautes Études (EPHE-PSL) -
+                            Centre de recherches linguistiques sur l’Asie
+                            orientale (CRLAO), Paris, France
+                        </div>
+
+                        <ul class="entry-detail">
+                            <li>Advisor: Prof. Guillaume Jacques</li>
+                        </ul>
+                    </div>
+
+                    <div class="entry">
+                        <div class="entry-header">
+                            <span class="entry-title">
+                                Language Consultant &amp; Teaching Assistant
+                                (Online)
+                            </span>
+
+                            <span class="entry-date">2024 – 2025</span>
+                        </div>
+
+                        <div class="entry-sub">
+                            Department of Linguistics, University of Oregon, USA
+                        </div>
                     </div>
                 </div>
 
-                <div class="sub-heading">2024</div>
+            </section>
 
-                <div class="pub-item">
-                    <div class="pub-authors">Daxue Yang, <strong>Sangsrgyas Tshering</strong> (Corresponding author) &amp; Jesse P. Gates.</div>
-                    <div class="pub-title">A voicing rule for non-continuant obstruents in Thebo Tibetan.</div>
-                    <div class="pub-journal">Language and Linguistics (SSCI), 25(4), 710–746</div>
-                    <div class="pub-doi">
-                        <a href="https://doi.org/10.1075/lali.00169.san" target="_blank">doi:10.1075/lali.00169.san</a>
+            <!-- ====== Publications Panel ====== -->
+
+            <section id="publications-panel" class="module-panel">
+
+                <div class="section">
+                    <h2 class="section-title">Publications</h2>
+
+                    <h3 class="sub-heading">Forthcoming</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            <strong>Sangsrgyas Tshering</strong>
+                        </div>
+
+                        <div class="pub-title">
+                            'Law/rule' &gt; habitual: an unusual grammaticalization
+                            pathway in the Tibetic and Rgyalrongic languages.
+                        </div>
+
+                        <div class="pub-journal">
+                            Folia Linguistica Historica (SSCI)
+                        </div>
+
+                        <div class="pub-doi">Forthcoming</div>
+                    </div>
+
+                    <h3 class="sub-heading">2026</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            Guillaume Jacques, Li Shang, Liu Zhenyang,
+                            <strong>Sangsrgyas Tshering</strong>, Yang Qingxia.
+                        </div>
+
+                        <div class="pub-title">
+                            Synchronic and historical phonology of the Gzitsha language.
+                        </div>
+
+                        <div class="pub-journal">
+                            Linguistics of the Tibeto-Burman Area (ESCI)
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            <strong>Sangsrgyas Tshering</strong>,
+                            Guillaume Jacques, Li Shang, Liu Zhenyang,
+                            Yang Qingxia.
+                        </div>
+
+                        <div class="pub-title">
+                            Verb stem alternation in Gzitsha.
+                        </div>
+
+                        <div class="pub-journal">
+                            Transactions of the Philological Society (A&amp;HCI)
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            Sangsrgyas Tshering (桑吉次力)
+                        </div>
+
+                        <div class="pub-title">
+                            日部嘉绒语玛荣话的亲涉和示证范畴
+                            Egophoricity and evidentiality in Smar.rong Rgyalrong.
+                        </div>
+
+                        <div class="pub-journal">
+                            <em>Minzu Yuwen</em>
+                            (《民族语文》, CSSCI), 28(2), 106–116
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            <strong>Sangsrgyas Tshering</strong>,
+                            Erin Lowry, Shannon Kaspar, Connor Paddock,
+                            Ludwig Adisiswoyo, Nathaniel Aaron Sims, Mary S.
+                        </div>
+
+                        <div class="pub-title">
+                            An interlinear glossed text in Thebo Tibetan:
+                            The story of Gser.mo.'tsho and Dngul.mo.'tsho.
+                        </div>
+
+                        <div class="pub-journal">
+                            Linguistics of the Tibeto-Burman Area (ESCI),
+                            49(1), 83–106
+                        </div>
+
+                        <div class="pub-doi">
+                            <a href="https://doi.org/10.1075/ltba.25018.tsh"
+                               target="_blank">
+                                doi:10.1075/ltba.25018.tsh
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="sub-heading">2025</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            Sangsrgyas Tshering (桑吉次力)
+                        </div>
+
+                        <div class="pub-title">
+                            迭部藏语的体系统及其历时演变
+                            The aspect system in Thebo Tibetan and its diachronic change.
+                        </div>
+
+                        <div class="pub-journal">
+                            <em>Yuyanxue Luncong</em>
+                            (《语言学论丛》, CSSCI), 78(3), 135–150
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            <strong>Sangsrgyas Tshering</strong>
+                            &amp; Kai Sun (孙凯)
+                        </div>
+
+                        <div class="pub-title">
+                            实现-能力：藏语动词的一个重要范畴
+                            "Realization-Potential": A necessary and important
+                            semantic category of Tibetan verbs.
+                        </div>
+
+                        <div class="pub-journal">
+                            Language and Linguistics (SSCI), 26(3), 496–532
+                        </div>
+
+                        <div class="pub-doi">
+                            <a href="https://benjamins.com/catalog/lali.00206.tsh"
+                               target="_blank">
+                                doi:10.1075/lali.00206.tsh
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="sub-heading">2024</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            Daxue Yang,
+                            <strong>Sangsrgyas Tshering</strong>
+                            (Corresponding author) &amp; Jesse P. Gates.
+                        </div>
+
+                        <div class="pub-title">
+                            A voicing rule for non-continuant obstruents in
+                            Thebo Tibetan.
+                        </div>
+
+                        <div class="pub-journal">
+                            Language and Linguistics (SSCI), 25(4), 710–746
+                        </div>
+
+                        <div class="pub-doi">
+                            <a href="https://doi.org/10.1075/lali.00169.san"
+                               target="_blank">
+                                doi:10.1075/lali.00169.san
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="sub-heading">2023</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            <strong>Sangsrgyas Tshering</strong>
+                        </div>
+
+                        <div class="pub-title">
+                            Egophoricity and evidentiality in Thebo Tibetan.
+                        </div>
+
+                        <div class="pub-journal">
+                            Himalayan Linguistics, 22(3), 34–56
+                        </div>
+
+                        <div class="pub-doi">
+                            <a href="https://doi.org/10.5070/H922358997"
+                               target="_blank">
+                                doi:10.5070/H922358997
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="sub-heading">2020</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            Sangsrgyas Tshering (桑吉次力)
+                        </div>
+
+                        <div class="pub-title">
+                            迭部藏语的"清音浊化"
+                            The voicing of unvoiced obstruents in Thebo Tibetan.
+                        </div>
+
+                        <div class="pub-journal">
+                            Cahiers de Linguistique Asie Orientale,
+                            49(1), 1–20
+                        </div>
+
+                        <div class="pub-doi">
+                            <a href="https://doi.org/10.1163/19606028-bja10001"
+                               target="_blank">
+                                doi:10.1163/19606028-bja10001
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="sub-heading">2019</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            Sangsrgyas Tshering
+                            (སངས་རྒྱས་ཚེ་རིང་།)
+                        </div>
+
+                        <div class="pub-title">
+                            དེང་རབས་སྐད་བརྡ་རིག་པའི་མཐོང་སྣེ་ནས་བོད་སྐད་ལ་བལྟ་བ།
+                            A modern linguistic perspective on Tibetan
+                            grammatical categories.
+                        </div>
+
+                        <div class="pub-journal">
+                            ཀན་ལྷོའི་མི་རིགས་རིག་གནས་ཞིབ་འཇུག
+                            Gannan Ethnic Culture Studies, 2: 107–117
+                        </div>
+                    </div>
+
+                    <h3 class="sub-heading">2017</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-authors">
+                            Sangsrgyas Tshering
+                            (སངས་རྒྱས་ཚེ་རིང་།)
+                        </div>
+
+                        <div class="pub-title">
+                            On the grammaticalization of the verb "thal" in
+                            Thebo Tibetan
+                            (ཐེ་བོའི་ཡུལ་སྐད་ཁྲོད་ཀྱི་བྱ་ཚིག་ཐལ་ལ་དཔྱད་པ།).
+                        </div>
+
+                        <div class="pub-journal">
+                            ཀན་ལྷོའི་མི་རིགས་རིག་གནས་ཞིབ་འཇུག
+                            Gannan Ethnic Culture Studies, 3: 65–72
+                        </div>
                     </div>
                 </div>
 
-                <div class="sub-heading">2023</div>
+            </section>
 
-                <div class="pub-item">
-                    <div class="pub-authors"><strong>Sangsrgyas Tshering</strong></div>
-                    <div class="pub-title">Egophoricity and evidentiality in Thebo Tibetan.</div>
-                    <div class="pub-journal">Himalayan Linguistics, 22(3), 34–56</div>
-                    <div class="pub-doi">
-                        <a href="https://doi.org/10.5070/H922358997" target="_blank">doi:10.5070/H922358997</a>
-                    </div>
-                </div>
+            <!-- ====== Teaching Panel ====== -->
 
-                <div class="sub-heading">2020</div>
+            <section id="teaching-panel" class="module-panel">
 
-                <div class="pub-item">
-                    <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
-                    <div class="pub-title">迭部藏语的"清音浊化" The voicing of unvoiced obstruents in Thebo Tibetan.</div>
-                    <div class="pub-journal">Cahiers de Linguistique Asie Orientale, 49(1), 1–20</div>
-                    <div class="pub-doi">
-                        <a href="https://doi.org/10.1163/19606028-bja10001" target="_blank">doi:10.1163/19606028-bja10001</a>
-                    </div>
-                </div>
+                <div class="two-col">
 
-                <div class="sub-heading">2019</div>
-
-                <div class="pub-item">
-                    <div class="pub-authors">Sangsrgyas Tshering (སངས་རྒྱས་ཚེ་རིང་།)</div>
-                    <div class="pub-title">དེང་རབས་སྐད་བརྡ་རིག་པའི་མཐོང་སྣེ་ནས་བོད་སྐད་ལ་བལྟ་བ། A modern linguistic perspective on Tibetan grammatical categories.</div>
-                    <div class="pub-journal">ཀན་ལྷོའི་མི་རིགས་རིག་གནས་ཞིབ་འཇུག Gannan Ethnic Culture Studies, 2: 107–117</div>
-                </div>
-
-                <div class="sub-heading">2017</div>
-
-                <div class="pub-item">
-                    <div class="pub-authors">Sangsrgyas Tshering (སངས་རྒྱས་ཚེ་རིང་།)</div>
-                    <div class="pub-title">On the grammaticalization of the verb "thal" in Thebo Tibetan (ཐེ་བོའི་ཡུལ་སྐད་ཁྲོད་ཀྱི་བྱ་ཚིག་ཐལ་ལ་དཔྱད་པ།).</div>
-                    <div class="pub-journal">ཀན་ལྷོའི་མི་རིགས་རིག་གནས་ཞིབ་འཇུག Gannan Ethnic Culture Studies, 3: 65–72</div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- ====== Teaching & Training Panel ====== -->
-        <div id="teaching-panel" class="module-panel">
-
-            <div class="two-col">
-                <div>
                     <div class="section">
                         <h2 class="section-title">Teaching Experience</h2>
 
                         <div class="entry">
                             <div class="entry-header">
-                                <span class="entry-title">Introduction to Linguistic Fieldwork</span>
+                                <span class="entry-title">
+                                    Introduction to Linguistic Fieldwork
+                                </span>
+
                                 <span class="entry-date">2025</span>
                             </div>
 
-                            <div class="entry-sub">Minzu University of China (Online)</div>
+                            <div class="entry-sub">
+                                Minzu University of China (Online)
+                            </div>
                         </div>
 
                         <div class="entry">
                             <div class="entry-header">
-                                <span class="entry-title">Introduction to Linguistics</span>
+                                <span class="entry-title">
+                                    Introduction to Linguistics
+                                </span>
+
                                 <span class="entry-date">2024</span>
                             </div>
 
                             <div class="entry-sub">
-                                The 7th Sino-Tibetan Research Methodology Workshop, Nankai University
+                                The 7th Sino-Tibetan Research Methodology
+                                Workshop, Nankai University
                             </div>
                         </div>
 
                         <div class="entry">
                             <div class="entry-header">
-                                <span class="entry-title">Advanced Tibetan</span>
+                                <span class="entry-title">
+                                    Advanced Tibetan
+                                </span>
+
                                 <span class="entry-date">2017 – 2019</span>
                             </div>
 
-                            <div class="entry-sub">Sino-Tibetan Linguistic Program</div>
+                            <div class="entry-sub">
+                                Sino-Tibetan Linguistic Program
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div>
                     <div class="section">
-                        <h2 class="section-title">Training &amp; Workshops</h2>
+                        <h2 class="section-title">
+                            Training &amp; Workshops
+                        </h2>
 
-                        <div class="entry-detail">
-                            <li>Semantic Shifts Summer School, CNRS, Fréjus, France (2022)</li>
-                            <li>International Summer School on Linguistic Fieldwork (FieldLing), INALCO, Paris (2022)</li>
-                            <li> 3rd Sino-Tibetan Research Methodology Workshop, Smithsonian &amp; Nankai University (2018)</li>
-                            <li> 2nd Sino-Tibetan Research Methodology Workshop, Smithsonian &amp;Nankai University (2017)</li>
-                        </div>
+                        <ul class="entry-detail">
+                            <li>
+                                Semantic Shifts Summer School, CNRS,
+                                Fréjus, France (2022)
+                            </li>
+
+                            <li>
+                                International Summer School on Linguistic
+                                Fieldwork (FieldLing), INALCO, Paris (2022)
+                            </li>
+
+                            <li>
+                                3rd Sino-Tibetan Research Methodology
+                                Workshop, Smithsonian &amp; Nankai University (2018)
+                            </li>
+
+                            <li>
+                                2nd Sino-Tibetan Research Methodology
+                                Workshop, Smithsonian &amp; Nankai University (2017)
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
-            </div>
+
+            </section>
 
         </div>
+    </main>
 
-    </div>
-</div>
+    <!-- ====== Footer ====== -->
 
-<!-- ====== Footer ====== -->
-<div class="footer">
-    <div class="container">
-        &copy; 2025 Sangsrgyas Tshering &nbsp;·&nbsp; Built with GitHub Pages
-        &nbsp;·&nbsp; <a href="mailto:sangjicili@lzu.edu.cn">Contact</a>
-        &nbsp;·&nbsp; <a href="https://orcid.org/0009-0008-1021-2409" target="_blank">ORCID</a>
-    </div>
-</div>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 Sangsrgyas Tshering
+            &nbsp;·&nbsp; Built with GitHub Pages
+            &nbsp;·&nbsp;
 
-<script>
-    const menuButtons = document.querySelectorAll(".module-menu button");
-    const panels = document.querySelectorAll(".module-panel");
+            <a href="mailto:sangjicili@lzu.edu.cn">
+                Contact
+            </a>
 
-    menuButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const targetPanel = document.getElementById(button.dataset.target);
+            &nbsp;·&nbsp;
 
-            panels.forEach(panel => {
-                panel.classList.remove("active");
+            <a href="https://orcid.org/0009-0008-1021-2409"
+               target="_blank">
+                ORCID
+            </a>
+        </div>
+    </footer>
+
+    <!-- ====== JavaScript ====== -->
+
+    <script>
+        const menuButtons =
+            document.querySelectorAll(".module-menu button");
+
+        const panels =
+            document.querySelectorAll(".module-panel");
+
+        menuButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const targetPanel =
+                    document.getElementById(button.dataset.target);
+
+                panels.forEach(panel => {
+                    panel.classList.remove("active");
+                });
+
+                menuButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                targetPanel.classList.add("active");
+                button.classList.add("active");
             });
-
-            menuButtons.forEach(btn => {
-                btn.classList.remove("active");
-            });
-
-            targetPanel.classList.add("active");
-            button.classList.add("active");
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>
-这样吗？
