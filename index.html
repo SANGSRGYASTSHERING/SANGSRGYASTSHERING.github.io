@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sangsrgyas Tshering · Academic Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Tibetan font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* ====== Global Reset ====== */
         * {
@@ -14,10 +18,11 @@
         }
 
         body {
-            font-family: "Georgia", "Times New Roman", "Noto Serif SC", "Songti SC", serif;
+            font-family: "Georgia", "Times New Roman", "Noto Serif Tibetan", "Jomolhari", "Tibetan Machine Uni", "Microsoft Himalaya", "Kailasa", "Noto Serif SC", "Songti SC", serif;
             background: #f8f6f2;
             color: #2c2c2c;
-            line-height: 1.75;
+            line-height: 1.8;
+            font-size: 17px;
         }
 
         a {
@@ -31,14 +36,14 @@
         .container {
             max-width: 1024px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 28px;
         }
 
         /* ====== Hero Banner ====== */
         .hero {
             background: linear-gradient(135deg, #5c1a1a 0%, #8b1a1a 40%, #a83232 100%);
             color: #fff;
-            padding: 60px 0 40px;
+            padding: 64px 0 44px;
             position: relative;
             overflow: hidden;
         }
@@ -47,37 +52,39 @@
             position: absolute;
             right: 40px;
             bottom: 20px;
-            font-size: 80px;
+            font-size: 100px;
             font-weight: 700;
             color: rgba(255,255,255,0.06);
             letter-spacing: 4px;
             line-height: 1;
             pointer-events: none;
+            font-family: "Noto Serif Tibetan", "Jomolhari", "Tibetan Machine Uni", "Microsoft Himalaya", serif;
         }
         .hero h1 {
-            font-size: 40px;
+            font-size: 44px;
             font-weight: 700;
             letter-spacing: 1px;
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .hero .subtitle {
-            font-size: 18px;
-            margin-top: 6px;
+            font-size: 20px;
+            margin-top: 8px;
             opacity: 0.92;
             font-weight: 300;
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .hero .tibetan-name {
-            font-size: 16px;
-            margin-top: 4px;
-            opacity: 0.65;
+            font-size: 18px;
+            margin-top: 6px;
+            opacity: 0.7;
+            font-family: "Noto Serif Tibetan", "Jomolhari", "Tibetan Machine Uni", "Microsoft Himalaya", serif;
         }
         .hero .contact-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px 30px;
-            margin-top: 20px;
-            font-size: 14px;
+            gap: 16px 32px;
+            margin-top: 22px;
+            font-size: 15px;
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .hero .contact-row i {
@@ -91,24 +98,24 @@
         /* ====== Main Content ====== */
         .main-content {
             background: #fff;
-            padding: 40px 0 60px;
+            padding: 44px 0 64px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.06);
         }
 
         .section {
-            margin-bottom: 36px;
+            margin-bottom: 40px;
         }
         .section:last-child {
             margin-bottom: 0;
         }
 
         .section-title {
-            font-size: 21px;
+            font-size: 23px;
             font-weight: 600;
             color: #5c1a1a;
             border-left: 4px solid #8b1a1a;
             padding-left: 14px;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             letter-spacing: 0.5px;
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
@@ -118,7 +125,7 @@
             display: grid;
             grid-template-columns: auto 1fr;
             gap: 6px 24px;
-            font-size: 15px;
+            font-size: 16px;
         }
         .info-grid .label {
             font-weight: 600;
@@ -131,7 +138,7 @@
 
         /* ====== Timeline Entries ====== */
         .entry {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
         .entry:last-child {
             margin-bottom: 0;
@@ -141,37 +148,37 @@
             justify-content: space-between;
             align-items: baseline;
             flex-wrap: wrap;
-            gap: 4px 12px;
+            gap: 6px 14px;
         }
         .entry-title {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
             color: #1a1a1a;
         }
         .entry-date {
-            font-size: 13px;
+            font-size: 14px;
             color: #8b1a1a;
             font-weight: 500;
             white-space: nowrap;
             background: #fdf0ee;
-            padding: 1px 10px;
-            border-radius: 12px;
+            padding: 2px 12px;
+            border-radius: 14px;
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
         .entry-sub {
-            font-size: 14px;
+            font-size: 16px;
             color: #555;
-            margin-top: 2px;
+            margin-top: 3px;
         }
         .entry-detail {
-            font-size: 14px;
+            font-size: 15px;
             color: #444;
-            margin-top: 4px;
+            margin-top: 6px;
             padding-left: 0;
         }
         .entry-detail li {
             list-style: none;
-            margin-bottom: 2px;
+            margin-bottom: 3px;
         }
         .entry-detail li::before {
             content: "· ";
@@ -180,12 +187,12 @@
 
         /* ====== Publication Entries ====== */
         .pub-item {
-            margin-bottom: 16px;
+            margin-bottom: 18px;
             padding-left: 0;
-            font-size: 14px;
-            line-height: 1.6;
+            font-size: 16px;
+            line-height: 1.65;
             border-left: 2px solid #eee;
-            padding-left: 14px;
+            padding-left: 16px;
         }
         .pub-item .pub-authors {
             color: #333;
@@ -200,7 +207,7 @@
             color: #555;
         }
         .pub-item .pub-doi {
-            font-size: 13px;
+            font-size: 14px;
             color: #8b1a1a;
             word-break: break-all;
         }
@@ -208,8 +215,8 @@
             display: inline-block;
             background: #8b1a1a;
             color: #fff;
-            font-size: 11px;
-            padding: 0 8px;
+            font-size: 12px;
+            padding: 0 10px;
             border-radius: 10px;
             margin-left: 6px;
             font-family: "Helvetica Neue", Arial, sans-serif;
@@ -219,14 +226,14 @@
         .tag-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
         }
         .tag {
             background: #f5f0ed;
             color: #4a2c2c;
-            padding: 3px 14px;
-            border-radius: 16px;
-            font-size: 13px;
+            padding: 4px 16px;
+            border-radius: 18px;
+            font-size: 15px;
             border: 1px solid #e0d6d0;
         }
         .tag strong {
@@ -237,21 +244,21 @@
         .two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            gap: 32px;
         }
         @media (max-width: 700px) {
             .two-col {
                 grid-template-columns: 1fr;
-                gap: 24px;
+                gap: 28px;
             }
         }
 
         /* ====== Footer ====== */
         .footer {
             text-align: center;
-            padding: 28px 0;
+            padding: 32px 0;
             color: #888;
-            font-size: 13px;
+            font-size: 14px;
             border-top: 1px solid #e8e3de;
             background: #fff;
             font-family: "Helvetica Neue", Arial, sans-serif;
@@ -262,9 +269,9 @@
 
         /* ====== Section Sub-headings ====== */
         .sub-heading {
-            font-size: 16px;
+            font-size: 18px;
             color: #8b1a1a;
-            margin: 18px 0 10px;
+            margin: 20px 0 12px;
             border-bottom: 1px dashed #ddd;
             padding-bottom: 4px;
             font-weight: 600;
@@ -272,22 +279,36 @@
         }
 
         .sub-heading-sm {
-            font-size: 15px;
+            font-size: 17px;
             color: #8b1a1a;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-weight: 600;
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
+        /* ====== About paragraph ====== */
+        .about-text {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #444;
+        }
+
         /* ====== Responsive ====== */
         @media (max-width: 600px) {
-            .hero h1 { font-size: 28px; }
-            .hero .subtitle { font-size: 15px; }
-            .hero { padding: 36px 0 28px; }
-            .hero::after { font-size: 50px; right: 16px; bottom: 12px; }
-            .container { padding: 0 16px; }
-            .section-title { font-size: 18px; }
+            body { font-size: 16px; }
+            .hero h1 { font-size: 30px; }
+            .hero .subtitle { font-size: 17px; }
+            .hero { padding: 40px 0 30px; }
+            .hero::after { font-size: 60px; right: 16px; bottom: 12px; }
+            .container { padding: 0 18px; }
+            .section-title { font-size: 20px; }
+            .entry-title { font-size: 17px; }
+            .entry-date { font-size: 13px; }
+            .entry-sub { font-size: 15px; }
             .entry-header { flex-direction: column; align-items: flex-start; }
+            .pub-item { font-size: 15px; }
+            .tag { font-size: 14px; }
+            .about-text { font-size: 16px; }
         }
     </style>
 </head>
@@ -316,13 +337,12 @@
         <!-- ====== About ====== -->
         <div class="section">
             <h2 class="section-title">About</h2>
-            <p style="font-size:15px; line-height:1.8; color:#444;">
+            <p class="about-text">
                 I am a linguist specializing in Tibeto-Burman languages, with a focus on Tibetan (Tibetic) and Rgyalrongic languages. 
                 My research spans morphosyntax, historical linguistics, grammaticalization, language contact, and 
                 community-based language documentation. I received my Ph.D. from Nankai University (2025), 
                 with a dissertation on the morphosyntax of the Smar.rong variety of Zbu Rgyalrong. 
-                I was a visiting student at École Pratique des Hautes Études (EPHE-PSL) in Paris (2021–2022) 
-                under the supervision of Prof. Guillaume Jacques. I am currently a postdoctoral researcher 
+                I was a visiting student at École Pratique des Hautes Études (EPHE-PSL) in Paris (2021–2022). I am currently a postdoctoral researcher 
                 (CuiYing Postdoctoral Fellow) at the School of Chinese Literatures and Languages, Lanzhou University.
             </p>
         </div>
@@ -454,7 +474,7 @@
             <div class="pub-item">
                 <div class="pub-authors"><strong>Sangsrgyas Tshering</strong>, Guillaume Jacques, Li Shang, Liu Zhenyang, Yang Qingxia.</div>
                 <div class="pub-title">Verb stem alternation in Gzitsha.</div>
-                <div class="pub-journal">Transactions of the Philological Society (A&HCI)</div>
+                <div class="pub-journal">Transactions of the Philological Society (A&amp;HCI)</div>
                 <div class="pub-doi">2026</div>
             </div>
 
@@ -609,9 +629,25 @@
                 </div>
                 <div class="entry-sub">The 5th International Forum on Linguistic Typology, Guangxi University for Nationalities, Nanning, China</div>
             </div>
-                    </div>
 
-        <!-- ====== Teaching & Social Media (Two Columns) ====== -->
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">The voicing of unvoiced obstruents in Thebo Tibetan (迭部藏语的"清音浊化")</span>
+                    <span class="entry-date">2018</span>
+                </div>
+                <div class="entry-sub">The 1st Symposium of the Sino-Tibetan Language and Culture Committee, Communication University of China, Beijing, China</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Some features of Thebo Tibetan (ཐེ་བོའི་ཡུལ་སྐད་ཀྱི་ཁྱད་ཆོས་འགའ་ལ་དཔྱད་པ།)</span>
+                    <span class="entry-date">2018</span>
+                </div>
+                <div class="entry-sub">The 9th Commemorative Symposium on Je Tsongkhapa, Minzu University of China, Beijing, China</div>
+            </div>
+        </div>
+
+        <!-- ====== Teaching & Training (Two Columns) ====== -->
         <div class="two-col">
             <div>
                 <div class="section">
