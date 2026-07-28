@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sangsrgyas Tshering · Academic Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Tibetan font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* ====== Global Reset ====== */
         * {
@@ -18,7 +14,7 @@
         }
 
         body {
-            font-family: "Georgia", "Times New Roman", "Noto Serif Tibetan", "Jomolhari", "Tibetan Machine Uni", "Microsoft Himalaya", "Kailasa", "Noto Serif SC", "Songti SC", serif;
+            font-family: "Georgia", "Times New Roman", "Jomolhari", "Noto Serif Tibetan", "Tibetan Machine Uni", "Microsoft Himalaya", "Kailasa", "Noto Serif SC", "Songti SC", serif;
             background: #f8f6f2;
             color: #2c2c2c;
             line-height: 1.8;
@@ -41,11 +37,13 @@
 
         /* ====== Hero Banner ====== */
         .hero {
-            background: linear-gradient(135deg, #5c1a1a 0%, #8b1a1a 40%, #a83232 100%);
+            background: linear-gradient(135deg, rgba(60,30,20,0.75) 0%, rgba(100,40,30,0.70) 40%, rgba(140,60,40,0.65) 100%),
+                        url('https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center center / cover no-repeat;
             color: #fff;
             padding: 64px 0 44px;
             position: relative;
             overflow: hidden;
+            min-height: 320px;
         }
         .hero::after {
             content: "སངས་རྒྱས་ཚེ་རིང་།";
@@ -58,7 +56,7 @@
             letter-spacing: 4px;
             line-height: 1;
             pointer-events: none;
-            font-family: "Noto Serif Tibetan", "Jomolhari", "Tibetan Machine Uni", "Microsoft Himalaya", serif;
+            font-family: "Jomolhari", "Noto Serif Tibetan", "Tibetan Machine Uni", "Microsoft Himalaya", serif;
         }
         .hero h1 {
             font-size: 44px;
@@ -77,7 +75,7 @@
             font-size: 18px;
             margin-top: 6px;
             opacity: 0.7;
-            font-family: "Noto Serif Tibetan", "Jomolhari", "Tibetan Machine Uni", "Microsoft Himalaya", serif;
+            font-family: "Jomolhari", "Noto Serif Tibetan", "Tibetan Machine Uni", "Microsoft Himalaya", serif;
         }
         .hero .contact-row {
             display: flex;
@@ -118,22 +116,6 @@
             margin-bottom: 20px;
             letter-spacing: 0.5px;
             font-family: "Helvetica Neue", Arial, sans-serif;
-        }
-
-        /* ====== Info Grid ====== */
-        .info-grid {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 6px 24px;
-            font-size: 16px;
-        }
-        .info-grid .label {
-            font-weight: 600;
-            color: #555;
-            white-space: nowrap;
-        }
-        .info-grid .value {
-            color: #333;
         }
 
         /* ====== Timeline Entries ====== */
@@ -298,7 +280,7 @@
             body { font-size: 16px; }
             .hero h1 { font-size: 30px; }
             .hero .subtitle { font-size: 17px; }
-            .hero { padding: 40px 0 30px; }
+            .hero { padding: 40px 0 30px; min-height: auto; }
             .hero::after { font-size: 60px; right: 16px; bottom: 12px; }
             .container { padding: 0 18px; }
             .section-title { font-size: 20px; }
@@ -319,7 +301,7 @@
     <div class="container">
         <h1>Sangsrgyas Tshering</h1>
         <div class="subtitle">Postdoctoral Researcher · School of Chinese Literatures and Languages, Lanzhou University</div>
-        <div class="tibetan-name">སངས་རྒྱས་ཚེ་རིང་། · 桑吉次力 </div>
+        <div class="tibetan-name">སངས་རྒྱས་ཚེ་རིང་། · 桑吉次力</div>
         <div class="contact-row">
             <span><i class="fas fa-envelope"></i> <a href="mailto:sangjicili@lzu.edu.cn">sangjicili@lzu.edu.cn</a></span>
             <span><i class="fas fa-envelope"></i> <a href="mailto:asang@mail.nankai.edu.cn">Bodskadduu@gmail.com</a></span>
@@ -388,7 +370,8 @@
                 </div>
                 <div class="entry-sub">Nankai University, Tianjin, China</div>
                 <div class="entry-detail">
-                    <li>Dissertation: <em>日部嘉绒语玛荣话研究 A morphosyntactic study of the Smar.rong dialect of Zbu Rgyalrong</em></li>
+                    <li>Dissertation: <em>日部嘉绒语玛荣话形态句法研究 A morphosyntactic study of the Smar.rong dialect of Zbu Rgyalrong</em></li>
+                    <li>Advisor: Prof.Yeshes·Vodgsal Atshogs</li>
                 </div>
             </div>
 
@@ -539,7 +522,7 @@
 
             <div class="pub-item">
                 <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
-                <div class="pub-title">དེང་རབས་སྐད་བརྡ་རིག་པའི་མཐོང་ཐོན་ནས་བོད་སྐད་ལ་བལྟ་བ། A modern linguistic perspective on Tibetan grammatical categories.</div>
+                <div class="pub-title">དེང་རབས་སྐད་བརྡ་རིག་པའི་མཐོང་སྣེ་ནས་བོད་སྐད་ལ་བལྟ་བ། A modern linguistic perspective on Tibetan grammatical categories.</div>
                 <div class="pub-journal">ཀན་ལྷོའི་མི་རིགས་རིག་གནས་ཞིབ་འཇུག Gannan Ethnic Culture Studies, 2: 107–117</div>
                 <div class="pub-doi">2019 (in Tibetan)</div>
             </div>
@@ -548,7 +531,7 @@
 
             <div class="pub-item">
                 <div class="pub-authors">Sangsrgyas Tshering (桑吉次力)</div>
-                <div class="pub-title">On the grammaticalization of the verb "thal" in Thebo Tibetan (ཐེ་བོའི་ཡུལ་སྐད་ཐོད་ཀྱི་བྱ་ཚིག་ཐལ་ལ་དཔྱད་པ།).</div>
+                <div class="pub-title">ཐེ་བོའི་ཡུལ་སྐད་ཁྲོད་ཀྱི་བྱ་ཚིག་ཐལ་ལ་དཔྱད་པ། On the grammaticalization of the verb "thal" in Thebo Tibetan.</div>
                 <div class="pub-journal">ཀན་ལྷོའི་མི་རིགས་རིག་གནས་ཞིབ་འཇུག Gannan Ethnic Culture Studies, 3: 65–72</div>
                 <div class="pub-doi">2017 (in Tibetan)</div>
             </div>
@@ -629,22 +612,7 @@
                 </div>
                 <div class="entry-sub">The 5th International Forum on Linguistic Typology, Guangxi University for Nationalities, Nanning, China</div>
             </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="entry-title">The voicing of unvoiced obstruents in Thebo Tibetan (迭部藏语的"清音浊化")</span>
-                    <span class="entry-date">2018</span>
-                </div>
-                <div class="entry-sub">The 1st Symposium of the Sino-Tibetan Language and Culture Committee, Communication University of China, Beijing, China</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="entry-title">Some features of Thebo Tibetan (ཐེ་བོའི་ཡུལ་སྐད་ཀྱི་ཁྱད་ཆོས་འགའ་ལ་དཔྱད་པ།)</span>
-                    <span class="entry-date">2018</span>
-                </div>
-                <div class="entry-sub">The 9th Commemorative Symposium on Je Tsongkhapa, Minzu University of China, Beijing, China</div>
-            </div>
+           
         </div>
 
         <!-- ====== Teaching & Training (Two Columns) ====== -->
